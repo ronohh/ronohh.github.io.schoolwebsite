@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>signup page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="">home</a> </li>
+            <li><a href="">about</a> </li>
+            <li><a href="">contact</a></li>
+            <li><a href="">gallery</a></li>
+            <li><a href="">signup</a></li>
+        </ul>
+    </nav>
+</header>
+    <div class="main-container">
+        <div class="form-container">
+            <h2>Register form</h2>
+            <form action="" method="post" >
+
+                <div class="form-group">
+                    <label for="name">name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">confirm password</label>
+                    <input type="password" id="confirm-password" name="confirm-password">
+                </div>
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male">male</label>
+                    <label><input type="radio" name="gender" value="female">female</label>
+                    <label><input type="radio" name="gender" value="other">other</label>
+                </div>
+                </div>
+                <div class="form-group">
+                    <label for="county">county:</label>
+                    <select name="county" id="county">
+                        <option value="" disabled selected>Select your county</option>
+                        <option value="NAKURU">NAKURU</option>
+                        <option value="NAIROBI">NAIROBI</option>
+                        <option value="NYERI">NYERI</option>
+                    </select>
+                </div>
+                <div class="form-group">
+<!--                    add an icon using font awesome-->
+                    <button type="submit" ><i class="fa-solid fa-user-plus"></i>Register</button>
+                </div>
+            </form>
+        </div >
+<!--        this is inside the div of the main-container-->
+        <div class="table-container">
+    <h2>table with users registers</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>gender</th>
+            <th>Country</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+<!--            table data-->
+            <td>ronoh </td>
+            <td>ronoh@gmail.com</td>
+            <td>male</td>
+            <td>nakuru</td>
+        </tr>
+        <tr>
+<!--            table data-->
+            <td>maina </td>
+            <td>maina@gmail.com</td>
+            <td>female</td>
+            <td>nairobi</td>
+        </tr>
+        <tr>
+<!--            table data-->
+            <td>angie </td>
+            <td>angie@gmail.com</td>
+            <td>female</td>
+            <td>nyeri</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+    </div>
+
+</body>
+</html>
